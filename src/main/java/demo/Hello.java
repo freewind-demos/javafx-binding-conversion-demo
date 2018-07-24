@@ -36,11 +36,16 @@ public class Hello extends Application {
                         );
                     }},
                     new Label() {{
-                        this.textProperty().bind(Bindings.createStringBinding(() ->
-                                "I want to eat [" + food.textProperty().getValue() + "]", food.textProperty())
+                        this.textProperty().bind(
+                                // The key code is here:
+                                Bindings.createStringBinding(
+                                        () -> "I want to eat [" + food.textProperty().getValue() + "]",
+                                        food.textProperty()
+                                )
                         );
                     }}
             );
         }};
     }
 }
+
