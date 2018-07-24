@@ -1,5 +1,5 @@
-JavaFX Hello World Demo
-=======================
+JavaFX Binding Conversion Demo
+==============================
 
-Show a window with `Hello, JavaFX` label.
+How to convert a binding to another one (maybe with different types).
 
